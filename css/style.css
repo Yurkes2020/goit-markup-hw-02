@@ -1,4 +1,51 @@
+:root {
+    --primiry-text-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+}
 body {
     font-family: roboto;
-    color: #212121;
+    color: var(--primiry-text-color);
 }
+ul {
+    list-style: none;
+}
+/* лого */
+.logo {
+    font-family: Raleway;
+    color:var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.logo-black {
+    color: var(--primiry-text-color);
+}
+/* навигация */
+.nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.nav .link:hover,
+.nav .link:focus {
+    color: var(--accent-color);
+}
+/* авторизация */
+.auth {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+.auth .link:hover,
+.auth .link:focus {
+    color: var(--accent-color);
+}
+/* заказ */
+
+/* преимущества */
+
