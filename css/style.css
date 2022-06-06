@@ -13,8 +13,18 @@ body {
     background: var(--hero-color);
     letter-spacing: 0.03em;
 }
+h1,h2,h3,p {
+    margin: 0;
+}
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }
 /* лого */
 .logo {
@@ -58,9 +68,16 @@ ul {
 .auth .link:focus {
     color: var(--accent-color);
 }
+/* секция  */
+.section {
+    background: var(--background-main);
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
 /* заказ */
-.hero {
-    background-color: var(--background-black);
+.bg-order {
+    background: var(--background-black)
 }
 .hero .hero-title {
     color: var(--hero-color);
@@ -70,6 +87,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .hero .hero-btn {
     color: var(--hero-color);
@@ -78,22 +96,23 @@ ul {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-}
-
-/* секция деятельность и преимущества */
-.section {
-    background: var(--background-main);
+    padding: 10px 32px;
+    min-width: 200px;
 }
 
 /* преимущества */
+.none {
+    display: none;
+}
 .section-list .title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 .section-list .text {
     line-height: 1.71;
@@ -105,10 +124,11 @@ ul {
     font-size: 36px;
     line-height: 1.67;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* наша команда */
-.section-team {
+.team {
     background: #F5F4FA;
 }
 .section-list .name {
@@ -116,6 +136,8 @@ ul {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .section-list .job {
     color: var(--text-color);
@@ -125,9 +147,7 @@ ul {
 }
 
 /* подвал */
-.footer {
-    background-color:var(--background-black);
-}
+
 .logo-white {
     color: var(--hero-color);
 }
@@ -150,7 +170,6 @@ ul {
 
 /* кнопки */
 .button {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
